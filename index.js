@@ -1,15 +1,15 @@
-let Total = 100;
-let engnumber = +prompt("Enter your english number out of 100");
-let mathnumber = +prompt("Enter your maths number out of 100");
-let bionumber = +prompt("Enter your biology number out of 100");
-let phynumber = +prompt("Enter your physics number out of 100");
-let chemnumber = +prompt("Enter your Chemistry number out of 100");
+let Total = 75;
+let engnumber = +prompt("Enter your english number out of 75");
+let mathnumber = +prompt("Enter your maths number out of 75");
+let bionumber = +prompt("Enter your biology number out of 75");
+let phynumber = +prompt("Enter your physics number out of 75");
+let chemnumber = +prompt("Enter your Chemistry number out of 75");
 
-let percentageEng = (engnumber / 100) * 100;
-let percentageMath = (mathnumber / 100) * 100;
-let percentageBio = (bionumber / 100) * 100;
-let percentagePhy = (phynumber / 100) * 100;
-let percentageChem = (chemnumber / 100) * 100;
+let percentageEng = (engnumber / Total) * 100;
+let percentageMath = (mathnumber / Total) * 100;
+let percentageBio = (bionumber / Total) * 100;
+let percentagePhy = (phynumber / Total) * 100;
+let percentageChem = (chemnumber / Total) * 100;
 
 
 function grade(percentage) {
@@ -33,7 +33,7 @@ function grade(percentage) {
     }
 }
 
-document.write("<table class= 'text-center m-auto mt-5 mytable'>" +
+document.write( "<div class='wrapper'>"+ "<table class= 'text-center m-auto mt-5 mytable'>" +
     "<tr class='myrow'>" +
     "<th class='column p-3'>" + "Subject" + "</th>" +
     "<th class='column p-3'>" + "Total Marks" + "</th>" +
@@ -80,7 +80,7 @@ document.write("<table class= 'text-center m-auto mt-5 mytable'>" +
     "<td class='column'>" + percentageChem + "</td>" +
     "<td class='column'>" + grade(percentageChem) + "</td>" +
     "</tr>" +
-    "</table>")
+    "</table>" + "</div>")
 
 
 
